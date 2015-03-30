@@ -1,4 +1,6 @@
-window.Tasks = Ember.Application.create({});
+window.Tasks = Ember.Application.create({
+    rootElement: $('#ember-application')
+});
 
 Tasks.Router.map(function() {
   this.resource('tasks', { path: '/' });

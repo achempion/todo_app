@@ -17,6 +17,9 @@ gem 'ember-rails'
 gem 'ember-source', '~> 1.9.0'
 gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
 
+gem 'rails-sass-images'
+gem 'evil_icons'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

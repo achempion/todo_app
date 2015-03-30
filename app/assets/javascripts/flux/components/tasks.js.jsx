@@ -52,9 +52,14 @@
 
         render: function () {
             return (
-                <div>
+                <div className="tasks">
                     {this.state.tasks.map(function(task, i) {
-                        return <div key={i}>{task.title}</div>
+                        return <div className="tasks-item" key={i}>
+                            <div className="tasks-item-actions">
+                                <input type="checkbox" checked={task.is_done} />
+                            </div>
+                            {task.title}
+                        </div>
                     })}
                 </div>
             );
