@@ -1,0 +1,5 @@
+= javascript_include_tag 'angular'
+div ng-app="tasks"
+  div ng-controller="TasksController" ng-init="initialize(#{@tasks.to_json})"
+    div ng-repeat="task in tasks"
+      | {{ task.title }}
