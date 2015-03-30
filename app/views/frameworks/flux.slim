@@ -1,0 +1,5 @@
+- # react_component('Tasks', tasks: @tasks.as_json)
+div#tasks
+javascript:
+  var tasks = #{@tasks.to_json.html_safe};
+= javascript_include_tag 'flux'

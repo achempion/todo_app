@@ -1,0 +1,1 @@
+Tasks = Ember.Application.create()

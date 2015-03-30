@@ -11,6 +11,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim-rails'
 
+gem 'react-rails', github: 'reactjs/react-rails'
+
+gem 'ember-rails'
+gem 'ember-source', '~> 1.9.0'
+gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
