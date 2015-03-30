@@ -1,0 +1,10 @@
+<script type="text/x-handlebars" data-template-name="tasks">
+  {{#each todo in model}}
+    <div>{{todo.title}}</div>
+  {{/each}}
+</script>
+
+<%= javascript_include_tag 'ember_manifest' %>
+<script>
+    Tasks.Task.FIXTURES = <%= @tasks.to_json.html_safe %>;
+</script>
