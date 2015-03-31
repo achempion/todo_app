@@ -4,5 +4,5 @@ div ng-app="tasks"
     .tasks
       .tasks-item ng-repeat="task in tasks"
         .tasks-item-actions
-          input type="checkbox" ng-checked="task.is_done"
+          input type="checkbox" ng-checked="task.is_done" ng-click="toggleTask(task, $index)"
         | {{ task.title }}

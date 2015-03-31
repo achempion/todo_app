@@ -1,18 +1,18 @@
 class TasksController < ApplicationController
+  skip_before_filter :verify_authenticity_token
+
   def index
     render json: Task.all, status: :ok
   end
 
   def create
-    Task.create(task_params)
-
-    head(200)
+    render json: Task.create(task_params)
   end
 
   def update
-    Task.find(params[:id]).update(task_params)
-
-    head(200)
+    task = Task.find(params[:id])
+    task.update(task_params)
+    render json: task
   end
 
   def destroy

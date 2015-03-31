@@ -1,6 +1,6 @@
 <script type="text/x-handlebars" data-template-name="tasks">
   <div class="tasks">
-      {{#each todo in model}}
+      {{#each todo in model itemController="task"}}
         <div class="tasks-item">
             <div class="tasks-item-actions">
                 {{input type="checkbox" checked=todo.is_done}}
