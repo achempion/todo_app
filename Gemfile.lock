@@ -58,6 +58,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    autoprefixer-rails (5.1.5)
+      execjs
+      json
     barber (0.8.2)
       ember-source (>= 1.0, < 2)
       execjs (>= 1.2, < 3)
@@ -206,6 +209,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   byebug
   coffee-rails (~> 4.1.0)
   ember-rails

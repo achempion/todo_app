@@ -10,5 +10,9 @@ html
       .main-page-header
         = evil_icons_sprite
         = evil_icon 'ei-star', size: :l, class: 'main-page-header-icon'
+        .main-page-header-menu
+          = link_to 'Angular', angular_path, class: ('active' if params[:action] == 'angular')
+          = link_to 'Flux', flux_path, class: ('active' if params[:action] == 'flux')
+          = link_to 'Ember', ember_path, class: ('active' if params[:action] == 'ember')
       .main-page-content
         = yield

@@ -1,6 +1,15 @@
 body
   font-family: 'Roboto Condensed', sans-serif
 
+a
+  text-decoration: none
+  color: green
+  transition: .2s opacity
+  &:hover
+    opacity: .6
+  &.active
+    text-decoration: underline
+
 @font-face
   font-family: 'Roboto Condensed'
   src: inline("RobotoCondensed-Regular.ttf")

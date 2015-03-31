@@ -20,6 +20,8 @@ gem 'ember_script-rails', :github => 'ghempton/ember-script-rails'
 gem 'rails-sass-images'
 gem 'evil_icons'
 
+gem 'autoprefixer-rails'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
